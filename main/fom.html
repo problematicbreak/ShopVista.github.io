@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="fom.css">
+
+</head>
+<body>
+ <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Buy now</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLeftLabel">Fill All Details.</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+
+
+
+      <form id="clearFrom">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="mobile">Mobile no</label>            <!--Changed-->
+        <input type="text" id="mobile" name="mobile" placeholder="Your mobile no..">
+
+        <label for="email">Email</label>            <!--Changed-->
+        <input type="text" id="email" name="email" placeholder="Your email id..">
+
+        <label for="lname">City</label>
+        <input type="text" id="city" name="lastname" placeholder="Your city name..">
+  
+        <label for="lname">Area</label>
+        <input type="text" id="area" name="lastname" placeholder="Your area name..">
+
+        <label for="number">Pin</label>            <!--Changed-->
+        <input type="text" id="pin" name="email" placeholder="Your pin code..">
+
+        <label for="payment">Payment Mode</label>
+        <select id="payment" name="country">
+          <option value="cash">Cash On Delivary</option>
+          <option value="online">Online Payment</option>
+        </select>
+  
+        <button type="submit" id="Submit">Submit</button>
+      </form>
+    </div>
+
+    
+  </div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+<script src="fom.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
